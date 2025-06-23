@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url(img/fondos/5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#contenedor {
+    width: 1350px; 
+    margin: 0 auto;
+    padding-top: 115px;
+}
+
+#encabezado {
+    flex-direction: row;
+    background: #02364ba9;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: #2cacad 3px solid;
+}
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {margin: 10px;
+}
+#menu {
+    display: flex;
+    list-style: none;
+}
+#menu li {display: flex;}
+#menu li a {
+    color:white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#menu li a:hover{
+    background: #75e2df; 
+    color: #024d60;
+}
+/* Banner */
+#banner {
+    height: 520px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/fondo6.jpeg"); 
+    background-color: #cccccc; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 10px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7; 
+    border-radius: 10px; 
+    padding: 20px 30px;
+    background: #2cacad; 
+    width: 590px;
+}
+.text h1{
+    text-align: center;
+}
+.text p {
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/* categorias */
+#categorias {
+    display: flex;
+    justify-content: space-around;
+}
+.categoria {
+    width: 300px; 
+    background: #75e2de; 
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.categoria a{
+    color: #02364b;
+    padding: 10px;
+    font-size: 1.7em;
+}
+.categoria p {
+    color: #02364b;
+    padding: 12px;
+    font-size: 0.8em;
+    text-align: justify;
+}
+.categoria img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+.text2 {
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+    color: black; 
+    font-size: 1.4em; 
+    padding-top: 15px;
+}
+.text2:hover{
+    color: #ffffff;
+}
+.imagen {
+    border: 4px solid #02364b; 
+    border-radius: 100px;
+}
+
+#noticia {
+    background: #2cadad6c; 
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.noticias_generales {
+    display: flex;
+}
+#noticia h1 {
+    color: #ffffff;
+    font-size: 1.7em;
+}
+.noticia_importante h2 {
+    color: #2cacad;
+    font-size: 2.2em;
+    margin: 15px 0;
+}
+.noticia_importante img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.noticia_importante p {
+    color: white;
+}
+.noticia1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noticia1 h2{
+    color: #2cacad;
+    font-size: 2.2em;
+}
+.noticia1 p{
+    color: white;
+    padding:20px 0 20px 0;
+}
+.noticia1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+.noticiageneral1, .noticiageneral2, .noticiageneral3 {
+    background-color: #083346;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+
+/* Team */
+#equipo {
+    text-align: center; 
+    padding-top: 30px;
+}
+#equipo h1 {
+    color: #ffffff;
+    font-size: 1.7em;
+}
+#trabajos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#trabajos h2 {
+    color: white;
+}
+#trabajos h4 {
+    color: #81dfe6;
+    padding-bottom: 10px;
+}
+.alumno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; 
+}
+.alumno img {
+    border-radius: 20px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+#historia{
+    display: flex; 
+    justify-content: center;
+    background: #024d6085; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+#historia p{
+    width: 850px;
+    color: #81dfe6;
+}
+
+#grupo_publicidad {
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+#grupo_publicidad h1{
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.7em;
+}
+#publicidad {
+    display: flex;
+    justify-content: space-around;
+}
+.articuloenoferta img {
+    border-radius: 15px;
+    width: 360px;
+}
+
+
+/* Footer */
+#pie {
+    display: flex;
+    justify-content: center;
+    background: #2cacad;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.info h3{
+    padding: 10px;
+}
+.ubicacion {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.ubicacion h3{
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: start;
+}
+.ubicacion iframe {
+    border-radius: 10px;
+}
+.ubicatext {
+    text-align: center;
+}
+#redes{
+    text-align: center; 
+    font-size: 33px;
+}
+#redes i{
+    border-radius: 50%; 
+    padding: 10px;
+}
+#redes i:hover{
+    background: #024d60; 
+    color: white; 
+    border-radius: 5px;
+}
+ul {
+    list-style: none; 
+    cursor: default;
+}
+.text4 {
+    display: block; 
+    text-decoration: none; 
+    color: black;
+}
+.text4:hover{
+    color: #024d60;
+}
+#copy {
+    text-align: center; 
+    padding: 50px;
+}
+#copy h4 {
+    color: black;
+}
+#logo {
+    font-size: 33px;
+}
+
+/*Pagina de Catalogo*/
+.titu {
+    font-size: 2.5em; 
+    background: #024d60;
+    color: #81dfe6;
+}
+.listadecategorias {
+    background:rgb(255, 255, 255); 
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.elem1 img {
+    object-fit: cover;
+}
+.cate {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.elem1, .elem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comprar {
+    margin: 15px;
+}
+.agregar {
+    text-decoration: none; 
+    background: #024d60; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-weight: bold;
+}
+.agregar:hover{
+    background: #75e2df; 
+    color: black;
+}
+.precio {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/*Pagina del Registro*/
+#registro { 
+    background:paleturquoise; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#registro h1 {
+    padding-bottom: 10px;
+    color: #02364b;
+    font-size: 2.5em;
+}
+
+#login { 
+    background:paleturquoise; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    height: 450px;
+    align-items: center;
+}
+#login h1 {
+    padding-bottom: 10px;
+    color: #02364b;
+    font-size: 2.5em;
+}
+
+.formregistro {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.ajustar {
+    width: 250px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 50px;
+    text-align: center;
+}
+.textajustar {
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.formcuadros {
+    margin: 5px;
+}
+.check {
+    margin-top: 20px;
+}
+.botonform {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #024d60; 
+    color: white; 
+    font-weight: bold;
+}
+.botonform:hover{
+    background: #75e2df; 
+    color: black;
+}
+
+/*Parte de las encuestas*/
+#califi, #comenta {
+    display: flex;
+    flex-direction: column;
+    background:rgba(175, 238, 238, 0.699); 
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+#califi h1, #comenta h1 {
+    padding-bottom: 10px;
+    color: #02364b;
+    font-size: 2.5em;
+}
+.cuadro1 {margin-top: 20px;
+    width: 400px;
+}
+.cuadro1 label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.encuestaform, .encuesta2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.puntos {margin-top: 20px; 
+    display: flex; 
+    justify-content: space-around;
+}
+.puntos input {
+    width: 100px; 
+    height: 1em;  
+    font-size: 2em; 
+}
+.respuesta {
+    display: flex; 
+    justify-content: space-around;
+}
+.respuesta p {
+    font-size: 1.1em;
+
+}
+.encuesta2 label{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.encuesta2 textarea {
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.botonencuest {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #024d60; 
+    color: white; 
+    font-weight: bold;
+}
+.botonencuest:hover{
+    background: #75e2df; 
+    color: black;
+}
+
+/*Pagina de los ganadores*/
+.ganadores { 
+    background:rgba(175, 238, 238, 0.589); 
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+.ganadores h2 {
+    color: #02364b;
+    font-size: 2.5em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+  
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+  
+.tabla-ganadores {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tabla-ganadores th, .tabla-ganadores td {
+    border: 1px solid #02364b;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tabla-ganadores th {
+    background: #02364b;
+    color: #75e2df;
+}
+.tabla-ganadores img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
